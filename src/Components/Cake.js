@@ -9,7 +9,7 @@ const Cake = ({cake}) => {
   return (
     <>
         <h2>{cake.cakeName}</h2>
-        <ul></ul>
+        <ul>{ingredientList}</ul>
         <p>Price:{cake.price}</p>
         <p>Rating:{cake.rating}</p>
 

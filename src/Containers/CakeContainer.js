@@ -1,5 +1,6 @@
 import { Component, useState } from "react";
 import Cake from "../Components/Cake";
+import CakeForm from "../Components/cakeForm";
 
 
 
@@ -53,8 +54,18 @@ const CakeContainer = () => {
 	// const MappingIngredients = listOfCakes.map( listOfCakes => listOfCakes.ingredients);
 	// console.log(MappingIngredients);
 
+	const addNewCake = (newCake) => {
+		// const updatedCakeArray = [...listOfCakes];
+		// updatedCakeArray.push(newCake);
+		// setListOfCakes(updatedCakeArray);
+		setListOfCakes([...listOfCakes,newCake])
+	}
+
+
   return (
     <>
+		<CakeForm addNewCake
+		={addNewCake} />
 		<h2>BNTA Bakery</h2>
         <Cake  cake={listOfCakes[0]}/>
         <Cake  cake={listOfCakes[1]}/>
