@@ -1,23 +1,17 @@
-const Cake = ({name, cake, pr , rt}) => {
+const Cake = ({cake}) => {
 
+  const ingredientList = cake.ingredients.map((ingredient) => <li>{ingredient}</li>)
 
-  const ingredientList = cake.map(cake.ingredient) => {
-    return <li>{ingredient}</li>;
-  }
-
-
-  // const ingredientList = cake.map(cake => {
-  //   return cake.ingredient;
-  // });
-
+  // const ingredientlIST = cake.ingredients.map((ingredient) => {
+    // return <li>{ingredient}</li> ** this is another way of doing it !
+  
 
   return (
     <>
-        <h2>cakeName: {name}</h2>
-        <p>Ingredients: </p>
-        <ul>{ingredientList}</ul>
-        <p>Price: {pr}</p>
-        <p>Rating: {rt}</p>
+        <h2>{cake.cakeName}</h2>
+        <ul></ul>
+        <p>Price:{cake.price}</p>
+        <p>Rating:{cake.rating}</p>
 
     </>
   )

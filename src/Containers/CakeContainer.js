@@ -56,9 +56,9 @@ const CakeContainer = () => {
   return (
     <>
 		<h2>BNTA Bakery</h2>
-        <Cake name={listOfCakes[0].cakeName} cake={listOfCakes[0]} pr={listOfCakes[0].price} rt={listOfCakes[0].rating}  />
-        <Cake name={listOfCakes[1].cakeName} cake={listOfCakes[1]} pr={listOfCakes[1].price} rt={listOfCakes[1].rating}  />
-        <Cake name={listOfCakes[2].cakeName} cake={listOfCakes[2]} pr={listOfCakes[2].price} rt={listOfCakes[2].rating}  />
+        <Cake  cake={listOfCakes[0]}/>
+        <Cake  cake={listOfCakes[1]}/>
+        <Cake  cake={listOfCakes[2]}/>
 		<p>Hope you like them!</p>
     </>
   )
