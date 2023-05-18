@@ -61,15 +61,17 @@ const CakeContainer = () => {
 		setListOfCakes([...listOfCakes,newCake])
 	}
 
+	const cakeComponents = listOfCakes.map((cake) => {
+		return <Cake cake={cake} />
+	})
+
 
   return (
     <>
 		<CakeForm addNewCake
 		={addNewCake} />
 		<h2>BNTA Bakery</h2>
-        <Cake  cake={listOfCakes[0]}/>
-        <Cake  cake={listOfCakes[1]}/>
-        <Cake  cake={listOfCakes[2]}/>
+        {cakeComponents}
 		<p>Hope you like them!</p>
     </>
   )
